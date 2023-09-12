@@ -35,12 +35,13 @@ function Textform(props) {
       <div className="mb-3" style={{color:props.mode==='light'?'black':'white'}}>
       <h1>{props.heading}</h1>
         <textarea
+        placeholder="Enter Text here..."
           className="form-control"
           id="mybox"
           rows="8"
           value={text}
           onChange={handleronchange}
-          style={{backgroundColor:props.mode==='dark'?'#272829':'white' ,color:props.mode==='light'?'black':'white'}}
+          style={{backgroundColor:props.mode==='dark'?'#272829':'white' ,color:props.mode==='light'?'black':'white', border:"1px solid black"}}
         ></textarea>
       </div>
       <button className="btn btn-primary mx-1 my-1" onClick={handlerUPclick}>
